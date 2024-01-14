@@ -101,3 +101,61 @@
   white-space: nowrap;
   margin-top: 5px;
 }
+
+.cardSection {
+  width: 500px;
+  height: 715px;
+  position: relative;
+}
+
+.guestFav {
+  width: 124px;
+  height: 28px;
+  border-radius: 20px;
+  background-color: #dddddd;
+  border: 3px solid white;
+}
+
+.guestTxt {
+  margin: 10px 11px 11px 8px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  white-space: nowrap;
+  font-size: 14px;
+}
+
+.imgSize {
+  width: 452px;
+  height: 452px;
+  border-radius: 10px;
+  margin: 24px 24px 0 24px;
+}
+
+.propertyInfo {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  text-align: start;
+  letter-spacing: normal;
+  line-height: 20.02px;
+  margin-left: 24px;
+  float: left;
+}
+
+.ratings {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin-top: 5px;
+  margin-right: 24px;
+  float: right;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.starIcon {
+  margin-top: 5px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 285px;
+}
