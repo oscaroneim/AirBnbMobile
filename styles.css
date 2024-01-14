@@ -1,0 +1,69 @@
+.header {
+  width: 500px;
+  height: 144px;
+  background-color: 000000;
+  position: relative;
+}
+
+.navSearchBar {
+  width: 398px;
+  height: 54px;
+  margin: 15px 73px 74px 25px;
+  border-radius: 30px;
+  border: 1px;
+  border-color: black;
+  background-color: 222222;
+  position: absolute;
+  box-shadow: 0 5px 15px 0 #e6e4e4;
+}
+
+.navSvg {
+  position: absolute;
+  margin: 17px 370px 17px 19px;
+}
+
+.searchText1 {
+  float: right;
+  margin: 10px 4px 26px 58px;
+  width: 339px;
+  height: 20px;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: start;
+  letter-spacing: normal;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: 222222;
+  font-weight: 500;
+}
+
+.searchText2 {
+  width: 341px;
+  height: 36px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 12px;
+  line-height: 20.02px;
+  text-align: start;
+  letter-spacing: normal;
+  position: absolute;
+  margin: 30px 4px 10px 54px;
+  font-weight: 200;
+}
+
+.navFilterBtn {
+  width: 40px;
+  height: 40px;
+  border: 1px solid;
+  border-radius: 50%;
+  float: right;
+  margin: 22px 24px 8px 11px;
+  border-color: rgb(175, 178, 182);
+}
+
+.filterIcon {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  margin: 12px 12px 12px 12px;
+}
