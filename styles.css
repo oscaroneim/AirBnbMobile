@@ -1,7 +1,6 @@
-.header {
+.nav {
   width: 500px;
   height: 144px;
-  background-color: 000000;
   position: relative;
 }
 
@@ -10,9 +9,9 @@
   height: 54px;
   margin: 15px 73px 74px 25px;
   border-radius: 30px;
-  border: 1px;
-  border-color: black;
-  background-color: 222222;
+  border: 1px #ffff;
+  border-color: rgb(186, 181, 181);
+
   position: absolute;
   box-shadow: 0 5px 15px 0 #e6e4e4;
 }
@@ -33,7 +32,6 @@
   letter-spacing: normal;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  color: 222222;
   font-weight: 500;
 }
 
@@ -62,8 +60,44 @@
 }
 
 .filterIcon {
-  position: absolute;
   width: 16px;
   height: 16px;
   margin: 12px 12px 12px 12px;
+}
+
+.iconCarousel {
+  width: 500px;
+  height: 74px;
+
+  margin-top: 74px;
+  position: absolute;
+  z-index: 2; /* Increased z-index to make it appear on top */
+}
+
+.iconPositioning {
+  width: 100%;
+  height: 43px;
+
+  justify-content: space-between;
+  display: flex;
+}
+
+.navIcon {
+  width: 50px;
+  height: 50px;
+  margin-top: 20px;
+  align-self: center;
+  text-align: center;
+}
+
+.iconTxt {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 12px;
+  line-height: 20.02px;
+  text-align: center;
+  letter-spacing: normal;
+
+  white-space: nowrap;
+  margin-top: 5px;
 }
