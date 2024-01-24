@@ -1,7 +1,10 @@
 body {
   margin: 0;
   padding: 0;
+  max-width: 32em;
 }
+
+/* ----------------------------------- NavBar section starts here -----------------------------------*/
 
 .nav {
   width: 100%;
@@ -9,7 +12,6 @@ body {
   background-color: #ffff;
   box-shadow: 2px 2px 2px 1px #e6e4e4;
   position: sticky;
-  top: 0;
   z-index: 100;
   padding: 15px;
 }
@@ -96,6 +98,10 @@ body {
   margin-right: 2px;
 }
 
+.iconPositioning:hover {
+  cursor: pointer;
+}
+
 .iconTxtContainer {
   display: flex;
   text-align: center;
@@ -123,7 +129,7 @@ body {
   width: auto;
 }
 
-/* ----------------------------------- Nav section ends here -----------------------------------*/
+/* ----------------------------------- PopUpMenu section starts here -----------------------------------*/
 
 .popUpMenuContainer1 {
   position: fixed;
@@ -145,6 +151,10 @@ body {
   border: 1px solid #c0c0c0;
   justify-content: center;
   position: relative;
+}
+
+.learnAboutContainer:hover {
+  cursor: pointer;
 }
 
 .learnTxt {
@@ -184,6 +194,7 @@ body {
 
 .iconTxtContainer2:hover {
   color: #e81948;
+  cursor: pointer;
 }
 
 .accountIcons {
@@ -206,12 +217,17 @@ body {
   letter-spacing: normal;
 }
 
-/* ----------------------------------- popUpMenu section ends here -----------------------------------*/
+/* ----------------------------------- PropertyCard section starts here -----------------------------------*/
 
 .cardSection {
   width: 100%;
-  height: 600px;
+  height: 550px;
+  margin-top: 25px;
   position: relative;
+}
+
+.cardSection:hover {
+  cursor: pointer;
 }
 
 .guestBtn {
@@ -221,7 +237,7 @@ body {
   width: 130px;
   height: 35px;
   margin-left: 10px;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 .guestFav {
@@ -250,11 +266,10 @@ body {
   height: 430px;
   border-radius: 10px;
   margin-left: 18px;
-  margin-top: 24px;
 }
 
 .descriptionContainer {
-  width: 100%;
+  width: 450px;
   height: 120px;
   margin-left: 24px;
   display: flex;
@@ -276,7 +291,7 @@ body {
   width: auto;
   height: 20px;
   margin-top: 15px;
-  margin-right: 56px;
+  margin-right: 5px;
 }
 
 .ratings {
@@ -301,11 +316,11 @@ body {
 
 .heartIconContainer {
   position: absolute;
-  top: 40px;
+  top: 20px;
   left: 430px;
 }
 
-/* ----------------------------------- Property Card section ends here -----------------------------------*/
+/* ----------------------------------- Show more section start here -----------------------------------*/
 
 .showMoreFullContainer {
   position: relative;
@@ -360,11 +375,11 @@ body {
 }
 
 .showMoreBtn:hover {
-  opacity: 0.5;
+  opacity: 0.85;
   cursor: pointer;
 }
 
-/* ----------------------------------- Show More section ends here -----------------------------------*/
+/* ----------------------------------- Footer section starts here -----------------------------------*/
 
 .footerContainer {
   width: 100%;
@@ -389,21 +404,9 @@ body {
   margin-bottom: 0;
 }
 
-.supportInfo {
-  margin-top: 20px;
-  padding-top: 20px;
-  margin-left: 25px;
-}
-
-.hostingInfo {
-  width: 90%;
-  margin: 0 auto;
-  border-top: 1px solid rgb(183, 183, 183);
-  margin-top: 20px;
-  padding-top: 20px;
-}
-
-.airBnbInfo {
+.hostingInfo,
+.airBnbInfo,
+.siteInfo {
   width: 90%;
   margin: 0 auto;
   border-top: 1px solid rgb(183, 183, 183);
@@ -412,11 +415,39 @@ body {
 }
 
 .siteInfo {
-  width: 90%;
-  margin: 0 auto;
-  border-top: 1px solid rgb(183, 183, 183);
-  margin-top: 20px;
-  padding-top: 20px;
+  height: 230px;
+  background-color: #f7f7f7;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 300;
+  line-height: 20.02px;
+  letter-spacing: normal;
+}
+
+.siteInfoContainer {
+  position: relative;
+  height: 20px;
+  line-height: 2em;
+}
+
+.globeSvg {
+  display: flex;
+  justify-content: center;
+  margin-top: 6px;
+}
+
+.languageMoney {
+  display: flex;
+  font-weight: 500;
+  height: 40px;
+}
+
+.language {
+  margin-left: 8px;
+}
+
+.currency {
+  margin-left: 28px;
 }
 
 ul {
