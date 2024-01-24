@@ -1,6 +1,11 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .nav {
   width: 100%;
-  height: 145px;
+  height: 115px;
   background-color: #ffff;
   box-shadow: 2px 2px 2px 1px #e6e4e4;
   position: sticky;
@@ -14,7 +19,7 @@
   position: absolute;
   width: 425px;
   height: 54px;
-  margin: 15px 73px 74px 25px;
+  margin: 0 73px 74px 0px;
   border-radius: 30px;
   border: 1px #ffff;
   border-color: rgb(186, 181, 181);
@@ -56,12 +61,12 @@
   border: 1px solid;
   border-radius: 50%;
   float: right;
-  margin: 22px 15px 8px 11px;
+  margin: 8px 15px 8px 435px;
   border-color: rgb(175, 178, 182);
+  position: absolute;
 }
 
 .filterBtn {
-  position: relative;
   width: 16px;
   height: 16px;
   margin: 12px 12px 12px 12px;
@@ -70,7 +75,7 @@
 .iconCarousel {
   width: 100%;
   height: 88px;
-  margin-top: 65px;
+  margin-top: 45px;
   margin-left: 1px;
   z-index: 2;
   overflow-x: scroll;
@@ -86,9 +91,9 @@
   display: flex;
   width: 800px;
   height: 88px;
-  justify-content: space-between;
   align-items: center;
   margin-top: 1px;
+  margin-right: 2px;
 }
 
 .iconTxtContainer {
@@ -97,6 +102,8 @@
   width: auto;
   height: 88px;
   padding-top: 44px;
+  margin-right: 14px;
+  margin-left: 14px;
 }
 
 .iconTxt {
@@ -118,7 +125,7 @@
 
 /* ----------------------------------- Nav section ends here -----------------------------------*/
 
-/*.popUpMenuContainer1 {
+.popUpMenuContainer1 {
   position: fixed;
   bottom: 0;
   left: 0;
@@ -135,7 +142,7 @@
   margin-top: auto;
   width: 100%;
   height: 48px;
-  border: 1px thin #f7f7f7;
+  border: 1px solid #c0c0c0;
   justify-content: center;
   position: relative;
 }
@@ -198,18 +205,23 @@
   text-align: center;
   letter-spacing: normal;
 }
-*/
+
 /* ----------------------------------- popUpMenu section ends here -----------------------------------*/
 
 .cardSection {
-  width: 600px;
+  width: 100%;
   height: 600px;
   position: relative;
 }
 
 .guestBtn {
-  display: flex;
-  justify-content: start;
+  position: absolute;
+  left: 40px;
+  top: 10px;
+  width: 130px;
+  height: 35px;
+  margin-left: 10px;
+  margin-top: 30px;
 }
 
 .guestFav {
@@ -219,11 +231,8 @@
   align-items: center;
   justify-content: center;
   border-radius: 20px;
-  background-color: #dddddd;
-  border: 1px solid grey;
-  position: absolute;
-  margin-left: 50px;
-  margin-top: 50px;
+  background-color: #fbfbfb;
+  border: 1px solid #fbfbfb;
   text-align: center;
   font-weight: 500;
   box-shadow: 0 5px 15px 0 #7a7878;
@@ -237,14 +246,15 @@
 }
 
 .imgSize {
-  width: 500px;
-  height: 452px;
+  width: 450px;
+  height: 430px;
   border-radius: 10px;
-  margin: 24px 24px 0 24px;
+  margin-left: 18px;
+  margin-top: 24px;
 }
 
 .descriptionContainer {
-  width: 500px;
+  width: 100%;
   height: 120px;
   margin-left: 24px;
   display: flex;
@@ -266,6 +276,7 @@
   width: auto;
   height: 20px;
   margin-top: 15px;
+  margin-right: 56px;
 }
 
 .ratings {
@@ -274,6 +285,7 @@
   font-weight: 300;
   font-size: 14px;
   width: auto;
+  align-self: center;
 }
 
 .starIcon {
@@ -287,12 +299,10 @@
   text-decoration: underline;
 }
 
-.heartIcon {
-  display: flex;
-  margin-right: 50px;
+.heartIconContainer {
   position: absolute;
-  right: 50px;
-  top: 50px;
+  top: 40px;
+  left: 430px;
 }
 
 /* ----------------------------------- Property Card section ends here -----------------------------------*/
@@ -339,36 +349,50 @@
 .showMoreBtn {
   background-color: black;
   border-radius: 10px;
+  border: none;
   width: 133px;
   height: 48px;
   color: white;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
+}
+
+.showMoreBtn:hover {
+  opacity: 0.5;
+  cursor: pointer;
 }
 
 /* ----------------------------------- Show More section ends here -----------------------------------*/
 
 .footerContainer {
   width: 100%;
+  margin-left: 0;
   height: 915px;
-  border: 1px solid red;
+  border-top: 1px solid rgb(183, 183, 183);
+  background-color: #f7f7f7;
+  font-size: 14px;
+}
+
+.footerContainer .supportInfo {
+  margin-top: 5px;
+  padding-top: 20px;
+  margin-left: 25px;
 }
 
 .footerHeader {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-weight: 400;
-  font-size: 18px;
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 0;
 }
 
 .supportInfo {
-  width: 100%;
-  margin: 0 auto;
-  border-top: 1px solid rgb(183, 183, 183);
   margin-top: 20px;
   padding-top: 20px;
+  margin-left: 25px;
 }
 
 .hostingInfo {
@@ -395,19 +419,21 @@
   padding-top: 20px;
 }
 
-.footerList {
-  display: grid;
-}
-
 ul {
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 40px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-weight: 200;
+  font-weight: 300;
   line-height: 20.02px;
   letter-spacing: normal;
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  line-height: 2em;
+}
+
+li:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }

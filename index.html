@@ -1,9 +1,10 @@
 <!DOCTYPE html>
+<html>
 <head>
   <link rel="stylesheet" href="styles.css" />
   <title>AirBnb</title>
   <meta charset="utf-8" />
-  <meta name="viewport" content="" width="device-width," initial-scale="1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 
 <nav class="nav">
@@ -222,15 +223,20 @@
 </div>
 <body>
   <section class="cardSection">
-    <div class="guestBtn">
-      <div class="guestFav">
-        <span class="guestTxt">Guest favourite</span>
-      </div>
-    </div>
-      <div class="heartIcon">
+    <div class="heartIconContainer">
+      <div>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 24px; width: 24px; stroke: var(--f-mkcy-f); stroke-width: 2; overflow: visible;"><path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path>
         </svg>
       </div>
+      </div>
+
+    <div class="guestBtn">
+      <div class="guestFav">
+        <span class="guestTxt">Guest favourite</span>
+       </div>
+      </div>
+    </div>
+
       <img
         class="imgSize"
         aria-hidden="true"
@@ -241,7 +247,7 @@
         data-original-uri="https://a0.muscache.com/im/pictures/miso/Hosting-618573800623079625/original/2eecc731-6e8e-49c4-963a-2c9284c11900.jpeg?im_w=720"
         style="--dls-liteimage-object-fit: cover"
       />
-    </div>
+  </div>
     <div class="descriptionContainer">
     <div class="propertyInfo">
       <p>
@@ -274,10 +280,12 @@
   </section>
 
   <section class="cardSection">
-      <div class="heartIcon">
+    <div class="heartIconContainer">
+      <div>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 24px; width: 24px; stroke: var(--f-mkcy-f); stroke-width: 2; overflow: visible;"><path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path>
         </svg>
       </div>
+    </div>
       <img class="imgSize" aria-hidden="true" elementtiming="LCP-target" fetchpriority="high" loading="eager" src="https://a0.muscache.com/im/pictures/miso/Hosting-14300924/original/ef816722-97a7-4bcb-b073-09ef8ebe05a9.jpeg?im_w=720" data-original-uri="https://a0.muscache.com/im/pictures/miso/Hosting-14300924/original/ef816722-97a7-4bcb-b073-09ef8ebe05a9.jpeg?im_w=720" style="--dls-liteimage-object-fit: cover;">
     </div>
     <div class="descriptionContainer">
@@ -317,10 +325,12 @@
       <span class="guestTxt">Guest favourite</span>
     </div>
   </div>
-    <div class="heartIcon">
+  <div class="heartIconContainer">
+    <div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 24px; width: 24px; stroke: var(--f-mkcy-f); stroke-width: 2; overflow: visible;"><path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path>
       </svg>
     </div>
+  </div>
     <img class="imgSize" 
          aria-hidden="true" 
          alt="Show all photos" 
@@ -363,10 +373,12 @@
 </section>
 
 <section class="cardSection">
-  <div class="heartIcon">
+  <div class="heartIconContainer">
+  <div>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 24px; width: 24px; stroke: var(--f-mkcy-f); stroke-width: 2; overflow: visible;"><path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path>
     </svg>
   </div>
+</div>
   <img class="imgSize" 
        aria-hidden="true" 
        elementtiming="LCP-target" 
@@ -420,13 +432,12 @@
 </div>
 </section>
 
-</body>
 <footer class="footerContainer">
 
   <section class="supportInfo"> 
-    <h3 class="footerHeader">Support</h3>
     <div class="footerList">
       <ul>
+      <span class="footerHeader">Support</span>
       <li>Help centre</li>
       <li>Get help with a safety issue</li>
       <li>AirCover</li>
@@ -438,9 +449,10 @@
   </section>
 
   <section class="hostingInfo">
-    <h3 class="footerHeader">Hosting</h3>
-      <div class="footerList">
+  
+      <div>
         <ul>
+          <li><h3 class="footerHeader">Hosting</h3></li>
         <li>Airbnb your home</li>
         <li>AirCover for hosts</li>
         <li>Hosting resources</li>
@@ -450,9 +462,10 @@
    </section>
 
   <section class="airBnbInfo"> 
-    <h3 class="footerHeader">AirBnb</h3>
-    <div class="footerList">
+    
+    <div>
       <ul>
+        <li><h3 class="footerHeader">AirBnb</h3></li>
       <li>Newsroom</li>
       <li>New features</li>
       <li>Careers</li>
@@ -468,6 +481,9 @@
   </section>
 
 </footer>
+
+</body>
+</html>
 
 
 
