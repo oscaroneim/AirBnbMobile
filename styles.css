@@ -1,25 +1,41 @@
+header {
+  position: relative;
+  width: 100vw;
+  min-height: calc(65px + 13vh);
+}
+
 body {
-  margin: 0;
+  overflow-x: hidden;
   padding: 0;
-  max-width: 32em;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  width: 41em;
+  height: auto;
+}
+
+.pageContainer {
+  position: relative;
+  max-width: 150vw;
 }
 
 /* ----------------------------------- NavBar section starts here -----------------------------------*/
 
 .nav {
-  width: 100%;
+  width: 30rem;
   height: 115px;
   background-color: #ffff;
   box-shadow: 2px 2px 2px 1px #e6e4e4;
   position: sticky;
   z-index: 100;
   padding: 15px;
+  top: 0;
 }
 
 .navSearchBar {
   display: flex;
   position: absolute;
-  width: 425px;
+  width: 25rem;
   height: 54px;
   margin: 0 73px 74px 0px;
   border-radius: 30px;
@@ -35,23 +51,23 @@ body {
 
 .searchText1 {
   margin: 10px 4px 26px 58px;
-  width: 341px;
+  width: 5em;
   height: 20px;
   font-size: 14px;
-  line-height: 20.02px;
+  line-height: 2.002em;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 500;
 }
 
 .searchText2 {
-  width: 341px;
+  width: 12em;
   height: 20px;
   padding-left: 5px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 12px;
-  line-height: 20.02px;
+  line-height: 2.002em;
   position: absolute;
   margin: 30px 4px 10px 54px;
   font-weight: 200;
@@ -63,7 +79,7 @@ body {
   border: 1px solid;
   border-radius: 50%;
   float: right;
-  margin: 8px 15px 8px 435px;
+  margin: 8px 15px 8px 415px;
   border-color: rgb(175, 178, 182);
   position: absolute;
 }
@@ -75,11 +91,10 @@ body {
 }
 
 .iconCarousel {
-  width: 100%;
+  width: 30em;
   height: 88px;
   margin-top: 45px;
   margin-left: 1px;
-  z-index: 2;
   overflow-x: scroll;
   overflow-y: hidden;
   white-space: nowrap;
@@ -91,7 +106,7 @@ body {
 
 .iconPositioning {
   display: flex;
-  width: 800px;
+  width: 100%;
   height: 88px;
   align-items: center;
   margin-top: 1px;
@@ -117,7 +132,7 @@ body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 12px;
-  line-height: 20.02px;
+  line-height: 2.002em;
   text-align: center;
   letter-spacing: normal;
   white-space: nowrap;
@@ -133,9 +148,8 @@ body {
 
 .popUpMenuContainer1 {
   position: fixed;
-  bottom: 0;
   left: 0;
-  width: 100%;
+  width: 510px;
   height: 112px;
   z-index: 100;
   box-shadow: 0 1px 1px 0 #e6e4e4;
@@ -164,23 +178,21 @@ body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 12px;
-  line-height: 20.02px;
+  line-height: 2.002em;
   text-align: center;
   letter-spacing: normal;
   font-weight: 450;
-  font-size: medium;
 }
 
 .popUpMenuContainer2 {
   display: flex;
   position: relative;
   width: 100%;
-  height: 80px;
+  height: 11vh;
   background-color: #ffff;
   border-top: 1px solid rgb(231, 231, 231);
   box-shadow: 0 1px 1px 0 #e6e4e4;
   color: #717171;
-  box-sizing: border-box;
 }
 
 .iconTxtContainer2 {
@@ -200,7 +212,7 @@ body {
 .accountIcons {
   margin-bottom: 30px;
   height: 20px;
-  width: 24px;
+  width: 25px;
 }
 
 .accountTxt {
@@ -212,32 +224,49 @@ body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 12px;
-  line-height: 20.02px;
+  line-height: 2.002em;
   text-align: center;
   letter-spacing: normal;
 }
 
 /* ----------------------------------- PropertyCard section starts here -----------------------------------*/
 
+.gridContainer {
+  margin-left: 25px;
+}
+
 .cardSection {
-  width: 100%;
-  height: 550px;
-  margin-top: 25px;
+  width: 29em;
+  height: auto;
+  margin-top: 1em;
   position: relative;
+  margin-bottom: 3em;
 }
 
 .cardSection:hover {
   cursor: pointer;
 }
 
+.imgContainer {
+  max-width: 28em;
+  max-height: auto;
+}
+
+.imgSize {
+  max-width: 100%;
+  height: 63vh;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
 .guestBtn {
   position: absolute;
-  left: 40px;
+  left: 1em;
   top: 10px;
   width: 130px;
   height: 35px;
   margin-left: 10px;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 .guestFav {
@@ -261,27 +290,19 @@ body {
   font-size: 14px;
 }
 
-.imgSize {
-  width: 450px;
-  height: 430px;
-  border-radius: 10px;
-  margin-left: 18px;
-}
-
 .descriptionContainer {
-  width: 450px;
-  height: 120px;
-  margin-left: 24px;
+  width: 97%;
+  height: 12vh;
+  margin-left: 0;
   display: flex;
   justify-content: space-between;
 }
 
 .propertyInfo {
-  height: fit-content;
   font-size: 14px;
   font-weight: 300;
   line-height: 20.02px;
-  float: left;
+
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
@@ -291,7 +312,7 @@ body {
   width: auto;
   height: 20px;
   margin-top: 15px;
-  margin-right: 5px;
+  margin-right: 7px;
 }
 
 .ratings {
@@ -316,23 +337,19 @@ body {
 
 .heartIconContainer {
   position: absolute;
-  top: 20px;
-  left: 430px;
+  top: 1em;
+  right: 2em;
 }
 
 /* ----------------------------------- Show more section start here -----------------------------------*/
 
 .showMoreFullContainer {
   position: relative;
-  display: flex;
-  width: 100%;
-  height: 150px;
-  margin-bottom: 30px;
+  height: 23vh;
   border-top: 1px solid rgb(183, 183, 183);
-  margin-top: 20px;
-  padding-top: 20px;
-  width: 90%;
-  margin: 0 auto;
+  width: 28em; /*was 28em*/
+  margin-left: 25px; /*was 35px*/
+  justify-content: center;
 }
 
 .textContainer {
@@ -382,7 +399,7 @@ body {
 /* ----------------------------------- Footer section starts here -----------------------------------*/
 
 .footerContainer {
-  width: 100%;
+  width: 77%;
   margin-left: 0;
   height: 915px;
   border-top: 1px solid rgb(183, 183, 183);
@@ -390,7 +407,7 @@ body {
   font-size: 14px;
 }
 
-.footerContainer .supportInfo {
+.supportInfo {
   margin-top: 5px;
   padding-top: 20px;
   margin-left: 25px;
@@ -420,14 +437,14 @@ body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 300;
-  line-height: 20.02px;
+  line-height: 2.002em;
   letter-spacing: normal;
 }
 
 .siteInfoContainer {
   position: relative;
   height: 20px;
-  line-height: 2em;
+  line-height: 2.002em;
 }
 
 .globeSvg {
@@ -454,14 +471,14 @@ ul {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 300;
-  line-height: 20.02px;
+  line-height: 2.002em;
   letter-spacing: normal;
   list-style-type: none;
   padding: 0;
 }
 
 li {
-  line-height: 2em;
+  line-height: 2.002em;
 }
 
 li:hover {
