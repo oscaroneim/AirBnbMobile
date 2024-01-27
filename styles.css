@@ -250,6 +250,7 @@ body {
 .imgContainer {
   max-width: 28em;
   max-height: auto;
+  padding-left: 2em;
 }
 
 .imgSize {
@@ -291,9 +292,9 @@ body {
 }
 
 .descriptionContainer {
-  width: 97%;
+  width: 94%;
   height: 12vh;
-  margin-left: 0;
+  margin-left: 2em;
   display: flex;
   justify-content: space-between;
 }
