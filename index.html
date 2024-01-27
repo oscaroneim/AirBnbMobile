@@ -1,380 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <title>AirBnb</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
-
-  <nav class="nav">
-    <section class="navSearchBar">
-      <div class="searchBarIcon">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 32 32"
-          style="display: block; height: 20px; width: 20px; fill: currentColor"
-          aria-hidden="true"
-          role="presentation"
-          focusable="false"
-        >
-          <path
-            d="M13 0a13 13 0 0 1 10.5 20.67l7.91 7.92-2.82 2.82-7.92-7.91A12.94 12.94 0 0 1 13 26a13 13 0 1 1 0-26zm0 4a9 9 0 1 0 0 18 9 9 0 0 0 0-18z"
-          ></path>
-        </svg>
-      </div>
-      <div class="searchText1">Anywhere</div>
-      <div class="searchText2">Any week • Add guests</div>
-    </section>
-
-    <section class="navFilterBtn">
-      <div class="filterBtn">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 32 32"
-          aria-hidden="true"
-          role="presentation"
-          focusable="false"
-          style="
-            display: block;
-            fill: none;
-            height: 16px;
-            width: 16px;
-            stroke: currentcolor;
-            stroke-width: 4;
-            overflow: visible;
-          "
-          class="st-current"
-        >
-          <path
-            fill="none"
-            d="M7 16H3m26 0H15M29 6h-4m-8 0H3m26 20h-4M7 16a4 4 0 1 0 8 0 4 4 0 0 0-8 0zM17 6a4 4 0 1 0 8 0 4 4 0 0 0-8 0zm0 20a4 4 0 1 0 8 0 4 4 0 0 0-8 0zm0 0H3"
-            class=""
-          ></path>
-        </svg>
-      </div>
-    </section>
-
-    <section class="iconCarousel">
-      <section class="iconPositioning">
-        <div class="iconTxtContainer">
-          <div>
-            <img
-              class="i181yxiv atm_j3_1osqo2v atm_vy_1o8jidz atm_e2_1wugsn5 atm_k4_wchqg7 atm_uc_n03lay atm_ui_idpfg4__p88qr9 dir dir-ltr"
-              src="https://a0.muscache.com/pictures/6ad4bd95-f086-437d-97e3-14d12155ddfe.jpg"
-              alt=""
-              width="24"
-              height="24"
-            />
-            <p class="iconTxt">Countryside</p>
-          </div>
-        </div>
-
-        <div class="iconTxtContainer">
-          <div>
-            <img
-              class="i181yxiv atm_j3_1osqo2v atm_vy_1o8jidz atm_e2_1wugsn5 atm_k4_wchqg7 atm_uc_n03lay atm_ui_idpfg4__p88qr9 dir dir-ltr"
-              src="https://a0.muscache.com/pictures/732edad8-3ae0-49a8-a451-29a8010dcc0c.jpg"
-              alt=""
-              width="24"
-              height="24"
-            />
-            <p class="iconTxt">Cabins</p>
-          </div>
-        </div>
-
-        <div class="iconTxtContainer">
-          <div>
-            <img
-              class="i181yxiv atm_j3_1osqo2v atm_vy_1o8jidz atm_e2_1wugsn5 atm_k4_wchqg7 atm_uc_n03lay atm_ui_idpfg4__p88qr9 dir dir-ltr"
-              src="https://a0.muscache.com/pictures/50861fca-582c-4bcc-89d3-857fb7ca6528.jpg"
-              alt=""
-              width="24"
-              height="24"
-            />
-            <p class="iconTxt">Design</p>
-          </div>
-        </div>
-
-        <div class="iconTxtContainer">
-          <div>
-            <img
-              class="i181yxiv atm_j3_1osqo2v atm_vy_1o8jidz atm_e2_1wugsn5 atm_k4_wchqg7 atm_uc_n03lay atm_ui_idpfg4__p88qr9 dir dir-ltr"
-              src="https://a0.muscache.com/pictures/3b1eb541-46d9-4bef-abc4-c37d77e3c21b.jpg"
-              alt=""
-              width="24"
-              height="24"
-            />
-            <p class="iconTxt">Amazing views</p>
-          </div>
-        </div>
-
-        <div class="iconTxtContainer">
-          <div>
-            <img
-              class="i181yxiv atm_j3_1osqo2v atm_vy_1o8jidz atm_e2_1wugsn5 atm_k4_wchqg7 atm_uc_n03lay atm_ui_idpfg4__p88qr9 dir dir-ltr"
-              src="https://a0.muscache.com/pictures/f60700bc-8ab5-424c-912b-6ef17abc479a.jpg"
-              alt=""
-              width="24"
-              height="24"
-            />
-            <p class="iconTxt">Barns</p>
-          </div>
-        </div>
-
-        <div class="iconTxtContainer">
-          <div>
-            <img
-              class="i181yxiv atm_j3_1osqo2v atm_vy_1o8jidz atm_e2_1wugsn5 atm_k4_wchqg7 atm_uc_n03lay atm_ui_idpfg4__p88qr9 dir dir-ltr"
-              src="https://a0.muscache.com/pictures/c5a4f6fc-c92c-4ae8-87dd-57f1ff1b89a6.jpg"
-              alt=""
-              width="24"
-              height="24"
-            />
-            <p class="iconTxt">OMG!</p>
-          </div>
-        </div>
-
-        <div class="iconTxtContainer">
-          <div>
-            <img
-              class="i181yxiv atm_j3_1osqo2v atm_vy_1o8jidz atm_e2_1wugsn5 atm_k4_wchqg7 atm_uc_n03lay atm_ui_idpfg4__p88qr9 dir dir-ltr"
-              src="https://a0.muscache.com/pictures/5ed8f7c7-2e1f-43a8-9a39-4edfc81a3325.jpg"
-              alt="coffee-mug"
-              width="24"
-              height="24"
-            />
-            <p class="iconTxt">Bed & Breakfasts</p>
-          </div>
-        </div>
-
-        <div class="iconTxtContainer">
-          <div>
-            <img
-              class="i181yxiv atm_j3_1osqo2v atm_vy_1o8jidz atm_e2_1wugsn5 atm_k4_wchqg7 atm_uc_n03lay atm_ui_idpfg4__p88qr9 dir dir-ltr"
-              src="https://a0.muscache.com/pictures/687a8682-68b3-4f21-8d71-3c3aef6c1110.jpg"
-              alt=""
-              width="24"
-              height="24"
-            />
-            <p class="iconTxt">Boats</p>
-          </div>
-        </div>
-
-        <div class="iconTxtContainer">
-        <div>
-          <img class="i181yxiv atm_j3_1osqo2v atm_vy_1o8jidz atm_e2_1wugsn5 atm_k4_wchqg7 atm_uc_n03lay atm_ui_idpfg4__p88qr9 dir dir-ltr" src="https://a0.muscache.com/pictures/3fb523a0-b622-4368-8142-b5e03df7549b.jpg" alt="" width="24" height="24">
-          <p class="iconTxt">Amazing pools</p>
-        </div>
-      </div>
-    </div>
-
-      </section>
-    </section>
-  </nav>
-
-  <div class="popUpMenuContainer1">
-    <div class="learnAboutContainer">
-      <span class="learnTxt">Learn about Guest Favourites</span>
-    </div>
-    <div class="popUpMenuContainer2">
-      <div class="iconTxtContainer2">
-        <div class="accountIcons">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 32 32"
-            aria-hidden="true"
-            role="presentation"
-            focusable="false"
-            style="
-              display: block;
-              fill: none;
-              height: 24px;
-              width: 24px;
-              stroke: currentcolor;
-              stroke-width: 2.66667;
-              overflow: visible;
-            "
-          >
-            <g fill="none">
-              <circle cx="12" cy="12" r="10"></circle>
-              <path d="m19 19 11 11"></path>
-            </g>
-          </svg>
-          <span class="accountTxt">Explore</span>
-        </div>
-      </div>
-
-      <div class="iconTxtContainer2">
-        <div class="accountIcons">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 32 32"
-            aria-hidden="true"
-            role="presentation"
-            focusable="false"
-            style="
-              display: block;
-              fill: none;
-              height: 24px;
-              width: 24px;
-              stroke: currentcolor;
-              stroke-width: 2.66667;
-              overflow: visible;
-            "
-          >
-            <path
-              d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"
-            ></path>
-          </svg>
-          <span class="accountTxt">Wishlist</span>
-        </div>
-      </div>
-
-      <div class="iconTxtContainer2">
-        <div class="accountIcons">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 32 32"
-            aria-hidden="true"
-            role="presentation"
-            focusable="false"
-            style="
-              display: block;
-              fill: none;
-              height: 24px;
-              width: 24px;
-              stroke: currentcolor;
-              stroke-width: 2;
-              overflow: visible;
-            "
-          >
-            <g fill="none">
-              <path
-                d="M16.67 24.94c-2.35 3.15-4.7 4.73-7.07 4.73-3.62 0-5.17-2.38-5.53-4.21-.32-1.63.5-3.82.8-4.54l1.75-3.85A205.3 205.3 0 0 1 11.7 6.6L12.6 5l.23-.41c.4-.68 1.5-2.25 3.84-2.25a4.16 4.16 0 0 1 3.78 2.16l.29.5.76 1.37.4.73c1.22 2.3 2.75 5.52 4.02 8.25l2.51 5.5c.27.61 1.16 2.92.83 4.62-.36 1.83-1.9 4.2-5.53 4.2-2.42 0-4.77-1.57-7.06-4.72z"
-              ></path>
-              <path
-                d="M16.67 24.94c2.1-2.8 3.34-5.09 3.7-6.84.52-2.63-1.06-4.83-3.7-4.83s-4.23 2.2-3.7 4.83c.35 1.75 1.59 4.03 3.7 6.84z"
-              ></path>
-            </g>
-          </svg>
-          <span class="accountTxt">Trips </span>
-        </div>
-      </div>
-
-      <div class="iconTxtContainer2">
-        <div class="accountIcons">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 32 32"
-            aria-hidden="true"
-            role="presentation"
-            focusable="false"
-            style="
-              display: block;
-              fill: none;
-              height: 24px;
-              width: 24px;
-              stroke: currentcolor;
-              stroke-width: 2;
-              overflow: visible;
-            "
-          >
-            <path
-              fill="none"
-              d="M26 3a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4h-6.32L16 29.5 12.32 25H6a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4z"
-            ></path>
-          </svg>
-          <span class="accountTxt">Inbox</span>
-        </div>
-      </div>
-
-      <div class="iconTxtContainer2">
-        <div class="accountIcons">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 32 32"
-            aria-hidden="true"
-            role="presentation"
-            focusable="false"
-            style="
-              display: block;
-              fill: none;
-              height: 24px;
-              width: 24px;
-              stroke: currentcolor;
-              stroke-width: 2;
-              overflow: visible;
-            "
-          >
-            <g fill="none">
-              <circle cx="16" cy="16" r="14"></circle>
-              <path
-                d="M14.02 19.66a6 6 0 1 1 3.96 0M17.35 19.67H18c3.69.61 6.8 2.91 8.54 6.08m-20.92-.27A12.01 12.01 0 0 1 14 19.67h.62"
-              ></path>
-            </g>
-          </svg>
-          <span class="accountTxt"> Profile </span>
-        </div>
-      </div>
-    </div>
-  </div>
   <body>
-    <section class="cardSection">
-      <div class="heartIconContainer">
-        <div>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 32 32"
-            aria-hidden="true"
-            role="presentation"
-            focusable="false"
-            style="
-              display: block;
-              fill: rgba(0, 0, 0, 0.5);
-              height: 24px;
-              width: 24px;
-              stroke: var(--f-mkcy-f);
-              stroke-width: 2;
-              overflow: visible;
-            "
-          >
-            <path
-              d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"
-            ></path>
-          </svg>
+    <div class="pageContainer">
+      <nav class="nav">
+        <div class="navSearchBar">
+          <div class="searchBarIcon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 32 32"
+              style="
+                display: block;
+                height: 20px;
+                width: 20px;
+                fill: currentColor;
+              "
+              aria-hidden="true"
+              role="presentation"
+              focusable="false"
+            >
+              <path
+                d="M13 0a13 13 0 0 1 10.5 20.67l7.91 7.92-2.82 2.82-7.92-7.91A12.94 12.94 0 0 1 13 26a13 13 0 1 1 0-26zm0 4a9 9 0 1 0 0 18 9 9 0 0 0 0-18z"
+              ></path>
+            </svg>
+          </div>
+          <div class="searchText1">Anywhere</div>
+          <div class="searchText2">Any week • Add guests</div>
         </div>
-      </div>
 
-      <div class="guestBtn">
-        <div class="guestFav">
-          <span class="guestTxt">Guest favourite</span>
-        </div>
-      </div>
-
-      <img
-        class="imgSize"
-        aria-hidden="true"
-        elementtiming="LCP-target"
-        fetchpriority="high"
-        loading="eager"
-        src="https://a0.muscache.com/im/pictures/miso/Hosting-618573800623079625/original/2eecc731-6e8e-49c4-963a-2c9284c11900.jpeg?im_w=720"
-        data-original-uri="https://a0.muscache.com/im/pictures/miso/Hosting-618573800623079625/original/2eecc731-6e8e-49c4-963a-2c9284c11900.jpeg?im_w=720"
-        style="--dls-liteimage-object-fit: cover"
-      />
-
-      <div class="descriptionContainer">
-        <div class="propertyInfo">
-          <p>
-            <strong>Groombridge, UK</strong> <br />
-            Individual host <br />
-            22-27 Jan <br />
-            <span class="price">£3,057 total</span>
-          </p>
-        </div>
-        <div class="starRateContainer">
-          <span class="starIcon"
-            ><svg
+        <section class="navFilterBtn">
+          <div class="filterBtn">
+            <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 32 32"
               aria-hidden="true"
@@ -382,328 +43,680 @@
               focusable="false"
               style="
                 display: block;
-                height: 10px;
-                width: 10px;
-                fill: currentcolor;
+                fill: none;
+                height: 16px;
+                width: 16px;
+                stroke: currentcolor;
+                stroke-width: 4;
+                overflow: visible;
               "
+              class="st-current"
             >
               <path
-                fill-rule="evenodd"
-                d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"
+                fill="none"
+                d="M7 16H3m26 0H15M29 6h-4m-8 0H3m26 20h-4M7 16a4 4 0 1 0 8 0 4 4 0 0 0-8 0zM17 6a4 4 0 1 0 8 0 4 4 0 0 0-8 0zm0 20a4 4 0 1 0 8 0 4 4 0 0 0-8 0zm0 0H3"
+                class=""
               ></path>
             </svg>
-          </span>
-          <span class="ratings">4.95</span>
-        </div>
-      </div>
-    </section>
+          </div>
+        </section>
 
-    <section class="cardSection">
-      <div class="heartIconContainer">
-        <div>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 32 32"
-            aria-hidden="true"
-            role="presentation"
-            focusable="false"
-            style="
-              display: block;
-              fill: rgba(0, 0, 0, 0.5);
-              height: 24px;
-              width: 24px;
-              stroke: var(--f-mkcy-f);
-              stroke-width: 2;
-              overflow: visible;
-            "
-          >
-            <path
-              d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"
-            ></path>
-          </svg>
-        </div>
-      </div>
-      <img
-        class="imgSize"
-        aria-hidden="true"
-        elementtiming="LCP-target"
-        fetchpriority="high"
-        loading="eager"
-        src="https://a0.muscache.com/im/pictures/miso/Hosting-14300924/original/ef816722-97a7-4bcb-b073-09ef8ebe05a9.jpeg?im_w=720"
-        data-original-uri="https://a0.muscache.com/im/pictures/miso/Hosting-14300924/original/ef816722-97a7-4bcb-b073-09ef8ebe05a9.jpeg?im_w=720"
-        style="--dls-liteimage-object-fit: cover"
-      />
+        <section class="iconCarousel">
+          <section class="iconPositioning">
+            <div class="iconTxtContainer">
+              <div>
+                <img
+                  class="i181yxiv atm_j3_1osqo2v atm_vy_1o8jidz atm_e2_1wugsn5 atm_k4_wchqg7 atm_uc_n03lay atm_ui_idpfg4__p88qr9 dir dir-ltr"
+                  src="https://a0.muscache.com/pictures/6ad4bd95-f086-437d-97e3-14d12155ddfe.jpg"
+                  alt=""
+                  width="24"
+                  height="24"
+                />
+                <p class="iconTxt">Countryside</p>
+              </div>
+            </div>
 
-      <div class="descriptionContainer">
-        <div class="propertyInfo">
-          <p>
-            <strong>Boarshed, UK</strong> <br />
-            Individual host <br />
-            24-29 Jan <br />
-            <span class="price">£4,684 total</span>
-          </p>
-        </div>
-        <div class="starRateContainer">
-          <span class="starIcon"
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 32 32"
-              aria-hidden="true"
-              role="presentation"
-              focusable="false"
-              style="
-                display: block;
-                height: 10px;
-                width: 10px;
-                fill: currentcolor;
-              "
-            >
-              <path
-                fill-rule="evenodd"
-                d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"
-              ></path>
-            </svg>
-          </span>
-          <span class="ratings">4.55</span>
-        </div>
-      </div>
-    </section>
+            <div class="iconTxtContainer">
+              <div>
+                <img
+                  class="i181yxiv atm_j3_1osqo2v atm_vy_1o8jidz atm_e2_1wugsn5 atm_k4_wchqg7 atm_uc_n03lay atm_ui_idpfg4__p88qr9 dir dir-ltr"
+                  src="https://a0.muscache.com/pictures/732edad8-3ae0-49a8-a451-29a8010dcc0c.jpg"
+                  alt=""
+                  width="24"
+                  height="24"
+                />
+                <p class="iconTxt">Cabins</p>
+              </div>
+            </div>
 
-    <section class="cardSection">
-      <div class="guestBtn">
-        <div class="guestFav">
-          <span class="guestTxt">Guest favourite</span>
-        </div>
-      </div>
-      <div class="heartIconContainer">
-        <div>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 32 32"
-            aria-hidden="true"
-            role="presentation"
-            focusable="false"
-            style="
-              display: block;
-              fill: rgba(0, 0, 0, 0.5);
-              height: 24px;
-              width: 24px;
-              stroke: var(--f-mkcy-f);
-              stroke-width: 2;
-              overflow: visible;
-            "
-          >
-            <path
-              d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"
-            ></path>
-          </svg>
-        </div>
-      </div>
-      <img
-        class="imgSize"
-        aria-hidden="true"
-        alt="Show all photos"
-        elementtiming="FMP-target"
-        id="FMP-target"
-        src="https://a0.muscache.com/im/pictures/miso/Hosting-869304689145832146/original/f8814cf6-6edc-4036-9013-bb8bd8839813.jpeg?im_w=720"
-        data-original-uri="https://a0.muscache.com/im/pictures/miso/Hosting-869304689145832146/original/f8814cf6-6edc-4036-9013-bb8bd8839813.jpeg"
-        data-shared-element-id="listing-869304689145832146-hero-image"
-        style="--dls-liteimage-object-fit: cover"
-      />
+            <div class="iconTxtContainer">
+              <div>
+                <img
+                  class="i181yxiv atm_j3_1osqo2v atm_vy_1o8jidz atm_e2_1wugsn5 atm_k4_wchqg7 atm_uc_n03lay atm_ui_idpfg4__p88qr9 dir dir-ltr"
+                  src="https://a0.muscache.com/pictures/50861fca-582c-4bcc-89d3-857fb7ca6528.jpg"
+                  alt=""
+                  width="24"
+                  height="24"
+                />
+                <p class="iconTxt">Design</p>
+              </div>
+            </div>
 
-      <div class="descriptionContainer">
-        <div class="propertyInfo">
-          <p>
-            <strong>Waterside Manor, UK</strong> <br />
-            Individual host <br />
-            27-31 Jan <br />
-            <span class="price">£7,601 total</span>
-          </p>
-        </div>
-        <div class="starRateContainer">
-          <span class="starIcon"
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 32 32"
-              aria-hidden="true"
-              role="presentation"
-              focusable="false"
-              style="
-                display: block;
-                height: 10px;
-                width: 10px;
-                fill: currentcolor;
-              "
-            >
-              <path
-                fill-rule="evenodd"
-                d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"
-              ></path>
-            </svg>
-          </span>
-          <span class="ratings">5.0</span>
-        </div>
-      </div>
-    </section>
+            <div class="iconTxtContainer">
+              <div>
+                <img
+                  class="i181yxiv atm_j3_1osqo2v atm_vy_1o8jidz atm_e2_1wugsn5 atm_k4_wchqg7 atm_uc_n03lay atm_ui_idpfg4__p88qr9 dir dir-ltr"
+                  src="https://a0.muscache.com/pictures/3b1eb541-46d9-4bef-abc4-c37d77e3c21b.jpg"
+                  alt=""
+                  width="24"
+                  height="24"
+                />
+                <p class="iconTxt">Amazing views</p>
+              </div>
+            </div>
 
-    <section class="cardSection">
-      <div class="heartIconContainer">
-        <div>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 32 32"
-            aria-hidden="true"
-            role="presentation"
-            focusable="false"
-            style="
-              display: block;
-              fill: rgba(0, 0, 0, 0.5);
-              height: 24px;
-              width: 24px;
-              stroke: var(--f-mkcy-f);
-              stroke-width: 2;
-              overflow: visible;
-            "
-          >
-            <path
-              d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"
-            ></path>
-          </svg>
-        </div>
-      </div>
-      <img
-        class="imgSize"
-        aria-hidden="true"
-        elementtiming="LCP-target"
-        fetchpriority="auto"
-        loading="eager"
-        src="https://a0.muscache.com/im/pictures/miso/Hosting-34808487/original/f325c6a1-5033-4cd4-ac31-d63c2e713668.jpeg?im_w=720"
-        data-original-uri="https://a0.muscache.com/im/pictures/miso/Hosting-34808487/original/f325c6a1-5033-4cd4-ac31-d63c2e713668.jpeg?im_w=720"
-        style="--dls-liteimage-object-fit: cover"
-      />
-      <div class="descriptionContainer">
-        <div class="propertyInfo">
-          <p>
-            <strong>Mayfield, UK</strong> <br />
-            Individual host <br />
-            24-31 Jan <br />
-            <span class="price">£821 total</span>
-          </p>
-        </div>
-        <div class="starRateContainer">
-          <span class="starIcon"
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 32 32"
-              aria-hidden="true"
-              role="presentation"
-              focusable="false"
-              style="
-                display: block;
-                height: 10px;
-                width: 10px;
-                fill: currentcolor;
-              "
-            >
-              <path
-                fill-rule="evenodd"
-                d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"
-              ></path>
-            </svg>
-          </span>
-          <span class="ratings">5.0</span>
-        </div>
-      </div>
-    </section>
+            <div class="iconTxtContainer">
+              <div>
+                <img
+                  class="i181yxiv atm_j3_1osqo2v atm_vy_1o8jidz atm_e2_1wugsn5 atm_k4_wchqg7 atm_uc_n03lay atm_ui_idpfg4__p88qr9 dir dir-ltr"
+                  src="https://a0.muscache.com/pictures/f60700bc-8ab5-424c-912b-6ef17abc479a.jpg"
+                  alt=""
+                  width="24"
+                  height="24"
+                />
+                <p class="iconTxt">Barns</p>
+              </div>
+            </div>
 
-    <section class="showMoreFullContainer">
-      <div class="textContainer">
-        <div class="showMoreTxt">Continue exploring amazing views</div>
-      </div>
+            <div class="iconTxtContainer">
+              <div>
+                <img
+                  class="i181yxiv atm_j3_1osqo2v atm_vy_1o8jidz atm_e2_1wugsn5 atm_k4_wchqg7 atm_uc_n03lay atm_ui_idpfg4__p88qr9 dir dir-ltr"
+                  src="https://a0.muscache.com/pictures/c5a4f6fc-c92c-4ae8-87dd-57f1ff1b89a6.jpg"
+                  alt=""
+                  width="24"
+                  height="24"
+                />
+                <p class="iconTxt">OMG!</p>
+              </div>
+            </div>
 
-      <div class="showMoreBtnContainer">
-        <div>
-          <button class="showMoreBtn">Show More</button>
-        </div>
-      </div>
-    </section>
+            <div class="iconTxtContainer">
+              <div>
+                <img
+                  class="i181yxiv atm_j3_1osqo2v atm_vy_1o8jidz atm_e2_1wugsn5 atm_k4_wchqg7 atm_uc_n03lay atm_ui_idpfg4__p88qr9 dir dir-ltr"
+                  src="https://a0.muscache.com/pictures/5ed8f7c7-2e1f-43a8-9a39-4edfc81a3325.jpg"
+                  alt="coffee-mug"
+                  width="24"
+                  height="24"
+                />
+                <p class="iconTxt">Bed & Breakfasts</p>
+              </div>
+            </div>
 
-    <footer class="footerContainer">
-      <section class="supportInfo">
-        <div class="footerList">
-          <ul>
-            <span class="footerHeader">Support</span>
-            <li>Help centre</li>
-            <li>Get help with a safety issue</li>
-            <li>AirCover</li>
-            <li>Anti-discrimination</li>
-            <li>Disability support</li>
-            <li>Cancellation options</li>
-            <li>Report neighbourhood concern</li>
-          </ul>
-        </div>
-      </section>
-      <section class="hostingInfo">
-        <div>
-          <ul>
-            <span class="footerHeader">Hosting</span>
-            <li>Airbnb your home</li>
-            <li>AirCover for hosts</li>
-            <li>Hosting resources</li>
-            <li>Community forum</li>
-            <li>Hosting responsibly</li>
-          </ul>
-        </div>
-      </section>
-      <section class="airBnbInfo">
-        <div>
-          <ul>
-            <span class="footerHeader">AirBnb</span>
-            <li>Newsroom</li>
-            <li>New features</li>
-            <li>Careers</li>
-            <li>Investors</li>
-            <li>Gift cards</li>
-            <li>Airbnb org emergency stays</li>
-          </ul>
-        </div>
-      </section>
+            <div class="iconTxtContainer">
+              <div>
+                <img
+                  class="i181yxiv atm_j3_1osqo2v atm_vy_1o8jidz atm_e2_1wugsn5 atm_k4_wchqg7 atm_uc_n03lay atm_ui_idpfg4__p88qr9 dir dir-ltr"
+                  src="https://a0.muscache.com/pictures/687a8682-68b3-4f21-8d71-3c3aef6c1110.jpg"
+                  alt=""
+                  width="24"
+                  height="24"
+                />
+                <p class="iconTxt">Boats</p>
+              </div>
+            </div>
 
-      <section class="siteInfo">
-        <div class="siteInfoContainer">
-          <div class="languageMoney">
-            <div class="globeSvg">
+            <div class="iconTxtContainer">
+              <div>
+                <img
+                  class="i181yxiv atm_j3_1osqo2v atm_vy_1o8jidz atm_e2_1wugsn5 atm_k4_wchqg7 atm_uc_n03lay atm_ui_idpfg4__p88qr9 dir dir-ltr"
+                  src="https://a0.muscache.com/pictures/3fb523a0-b622-4368-8142-b5e03df7549b.jpg"
+                  alt=""
+                  width="24"
+                  height="24"
+                />
+                <p class="iconTxt">Amazing pools</p>
+              </div>
+            </div>
+          </section>
+        </section>
+      </nav>
+      <nav class="popUpMenuContainer1">
+        <div class="learnAboutContainer">
+          <span class="learnTxt">Learn about Guest Favourites</span>
+        </div>
+        <div class="popUpMenuContainer2">
+          <div class="iconTxtContainer2">
+            <div class="accountIcons">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 16 16"
-                style="
-                  display: block;
-                  height: 16px;
-                  width: 16px;
-                  fill: currentColor;
-                "
+                viewBox="0 0 32 32"
                 aria-hidden="true"
                 role="presentation"
                 focusable="false"
+                style="
+                  display: block;
+                  fill: none;
+                  height: 24px;
+                  width: 24px;
+                  stroke: currentcolor;
+                  stroke-width: 2.66667;
+                  overflow: visible;
+                "
+              >
+                <g fill="none">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="m19 19 11 11"></path>
+                </g>
+              </svg>
+              <span class="accountTxt">Explore</span>
+            </div>
+          </div>
+
+          <div class="iconTxtContainer2">
+            <div class="accountIcons">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 32 32"
+                aria-hidden="true"
+                role="presentation"
+                focusable="false"
+                style="
+                  display: block;
+                  fill: none;
+                  height: 24px;
+                  width: 24px;
+                  stroke: currentcolor;
+                  stroke-width: 2.66667;
+                  overflow: visible;
+                "
               >
                 <path
-                  d="M8 .25a7.77 7.77 0 0 1 7.75 7.78 7.75 7.75 0 0 1-7.52 7.72h-.25A7.75 7.75 0 0 1 .25 8.24v-.25A7.75 7.75 0 0 1 8 .25zm1.95 8.5h-3.9c.15 2.9 1.17 5.34 1.88 5.5H8c.68 0 1.72-2.37 1.93-5.23zm4.26 0h-2.76c-.09 1.96-.53 3.78-1.18 5.08A6.26 6.26 0 0 0 14.17 9zm-9.67 0H1.8a6.26 6.26 0 0 0 3.94 5.08 12.59 12.59 0 0 1-1.16-4.7l-.03-.38zm1.2-6.58-.12.05a6.26 6.26 0 0 0-3.83 5.03h2.75c.09-1.83.48-3.54 1.06-4.81zm2.25-.42c-.7 0-1.78 2.51-1.94 5.5h3.9c-.15-2.9-1.18-5.34-1.89-5.5h-.07zm2.28.43.03.05a12.95 12.95 0 0 1 1.15 5.02h2.75a6.28 6.28 0 0 0-3.93-5.07z"
+                  d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"
+                ></path>
+              </svg>
+              <span class="accountTxt">Wishlist</span>
+            </div>
+          </div>
+
+          <div class="iconTxtContainer2">
+            <div class="accountIcons">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 32 32"
+                aria-hidden="true"
+                role="presentation"
+                focusable="false"
+                style="
+                  display: block;
+                  fill: none;
+                  height: 24px;
+                  width: 24px;
+                  stroke: currentcolor;
+                  stroke-width: 2;
+                  overflow: visible;
+                "
+              >
+                <g fill="none">
+                  <path
+                    d="M16.67 24.94c-2.35 3.15-4.7 4.73-7.07 4.73-3.62 0-5.17-2.38-5.53-4.21-.32-1.63.5-3.82.8-4.54l1.75-3.85A205.3 205.3 0 0 1 11.7 6.6L12.6 5l.23-.41c.4-.68 1.5-2.25 3.84-2.25a4.16 4.16 0 0 1 3.78 2.16l.29.5.76 1.37.4.73c1.22 2.3 2.75 5.52 4.02 8.25l2.51 5.5c.27.61 1.16 2.92.83 4.62-.36 1.83-1.9 4.2-5.53 4.2-2.42 0-4.77-1.57-7.06-4.72z"
+                  ></path>
+                  <path
+                    d="M16.67 24.94c2.1-2.8 3.34-5.09 3.7-6.84.52-2.63-1.06-4.83-3.7-4.83s-4.23 2.2-3.7 4.83c.35 1.75 1.59 4.03 3.7 6.84z"
+                  ></path>
+                </g>
+              </svg>
+              <span class="accountTxt">Trips </span>
+            </div>
+          </div>
+
+          <div class="iconTxtContainer2">
+            <div class="accountIcons">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 32 32"
+                aria-hidden="true"
+                role="presentation"
+                focusable="false"
+                style="
+                  display: block;
+                  fill: none;
+                  height: 24px;
+                  width: 24px;
+                  stroke: currentcolor;
+                  stroke-width: 2;
+                  overflow: visible;
+                "
+              >
+                <path
+                  fill="none"
+                  d="M26 3a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4h-6.32L16 29.5 12.32 25H6a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4z"
+                ></path>
+              </svg>
+              <span class="accountTxt">Inbox</span>
+            </div>
+          </div>
+
+          <div class="iconTxtContainer2">
+            <div class="accountIcons">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 32 32"
+                aria-hidden="true"
+                role="presentation"
+                focusable="false"
+                style="
+                  display: block;
+                  fill: none;
+                  height: 24px;
+                  width: 24px;
+                  stroke: currentcolor;
+                  stroke-width: 2;
+                  overflow: visible;
+                "
+              >
+                <g fill="none">
+                  <circle cx="16" cy="16" r="14"></circle>
+                  <path
+                    d="M14.02 19.66a6 6 0 1 1 3.96 0M17.35 19.67H18c3.69.61 6.8 2.91 8.54 6.08m-20.92-.27A12.01 12.01 0 0 1 14 19.67h.62"
+                  ></path>
+                </g>
+              </svg>
+              <span class="accountTxt"> Profile </span>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="gridContainer">
+        <section class="cardSection">
+          <div class="heartIconContainer">
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 32 32"
+                aria-hidden="true"
+                role="presentation"
+                focusable="false"
+                style="
+                  display: block;
+                  fill: rgba(0, 0, 0, 0.5);
+                  height: 24px;
+                  width: 24px;
+                  stroke: var(--f-mkcy-f);
+                  stroke-width: 2;
+                  overflow: visible;
+                "
+              >
+                <path
+                  d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"
                 ></path>
               </svg>
             </div>
-            <span class="language">English (GB)</span>
-            <span class="currency">£ GBP</span>
           </div>
 
-          <div class="copyright">© 2024 Airbnb, Inc.</div>
+          <div class="imgContainer">
+            <div class="guestBtn">
+              <div class="guestFav">
+                <span class="guestTxt">Guest favourite</span>
+              </div>
+            </div>
+            <img
+              class="imgSize"
+              aria-hidden="true"
+              elementtiming="LCP-target"
+              fetchpriority="high"
+              loading="lazy"
+              src="./images/groomsbridge.jpg"
+              data-original-uri="./images/groomsbridge.jpg"
+              style="--dls-liteimage-object-fit: cover"
+            />
+          </div>
+          <div class="descriptionContainer">
+            <div class="propertyInfo">
+              <p>
+                <strong>Groombridge, UK</strong> <br />
+                Individual host <br />
+                22-27 Jan <br />
+                <span class="price">£3,057 total</span>
+              </p>
+            </div>
+            <div class="starRateContainer">
+              <span class="starIcon"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32"
+                  aria-hidden="true"
+                  role="presentation"
+                  focusable="false"
+                  style="
+                    display: block;
+                    height: 10px;
+                    width: 10px;
+                    fill: currentcolor;
+                  "
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"
+                  ></path>
+                </svg>
+              </span>
+              <span class="ratings">4.95</span>
+            </div>
+          </div>
+        </section>
 
-          <div class="privacyTermsMap">Privacy • Terms • Sitemap •</div>
+        <section class="cardSection">
+          <div class="heartIconContainer">
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 32 32"
+                aria-hidden="true"
+                role="presentation"
+                focusable="false"
+                style="
+                  display: block;
+                  fill: rgba(0, 0, 0, 0.5);
+                  height: 24px;
+                  width: 24px;
+                  stroke: var(--f-mkcy-f);
+                  stroke-width: 2;
+                  overflow: visible;
+                "
+              >
+                <path
+                  d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+          <div class="imgContainer">
+            <img
+              class="imgSize"
+              aria-hidden="true"
+              elementtiming="LCP-target"
+              fetchpriority="high"
+              loading="eager"
+              src="https://a0.muscache.com/im/pictures/miso/Hosting-14300924/original/ef816722-97a7-4bcb-b073-09ef8ebe05a9.jpeg?im_w=720"
+              data-original-uri="https://a0.muscache.com/im/pictures/miso/Hosting-14300924/original/ef816722-97a7-4bcb-b073-09ef8ebe05a9.jpeg?im_w=720"
+              style="--dls-liteimage-object-fit: cover"
+            />
+          </div>
+          <div class="descriptionContainer">
+            <div class="propertyInfo">
+              <p>
+                <strong>Boarshed, UK</strong> <br />
+                Individual host <br />
+                24-29 Jan <br />
+                <span class="price">£4,684 total</span>
+              </p>
+            </div>
+            <div class="starRateContainer">
+              <span class="starIcon"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32"
+                  aria-hidden="true"
+                  role="presentation"
+                  focusable="false"
+                  style="
+                    display: block;
+                    height: 10px;
+                    width: 10px;
+                    fill: currentcolor;
+                  "
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"
+                  ></path>
+                </svg>
+              </span>
+              <span class="ratings">4.55</span>
+            </div>
+          </div>
+        </section>
 
-          <div class="slaveActCompanydeets">
-            UK Modern Slavery Act • Company details
+        <section class="cardSection">
+          <div class="guestBtn">
+            <div class="guestFav">
+              <span class="guestTxt">Guest favourite</span>
+            </div>
+          </div>
+          <div class="heartIconContainer">
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 32 32"
+                aria-hidden="true"
+                role="presentation"
+                focusable="false"
+                style="
+                  display: block;
+                  fill: rgba(0, 0, 0, 0.5);
+                  height: 24px;
+                  width: 24px;
+                  stroke: var(--f-mkcy-f);
+                  stroke-width: 2;
+                  overflow: visible;
+                "
+              >
+                <path
+                  d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+          <div class="imgContainer">
+            <img
+              class="imgSize"
+              aria-hidden="true"
+              alt="Show all photos"
+              elementtiming="FMP-target"
+              id="FMP-target"
+              src="https://a0.muscache.com/im/pictures/miso/Hosting-869304689145832146/original/f8814cf6-6edc-4036-9013-bb8bd8839813.jpeg?im_w=720"
+              data-original-uri="https://a0.muscache.com/im/pictures/miso/Hosting-869304689145832146/original/f8814cf6-6edc-4036-9013-bb8bd8839813.jpeg"
+              data-shared-element-id="listing-869304689145832146-hero-image"
+              style="--dls-liteimage-object-fit: cover"
+            />
+          </div>
+          <div class="descriptionContainer">
+            <div class="propertyInfo">
+              <p>
+                <strong>Waterside Manor, UK</strong> <br />
+                Individual host <br />
+                27-31 Jan <br />
+                <span class="price">£7,601 total</span>
+              </p>
+            </div>
+            <div class="starRateContainer">
+              <span class="starIcon"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32"
+                  aria-hidden="true"
+                  role="presentation"
+                  focusable="false"
+                  style="
+                    display: block;
+                    height: 10px;
+                    width: 10px;
+                    fill: currentcolor;
+                  "
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"
+                  ></path>
+                </svg>
+              </span>
+              <span class="ratings">5.0</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="cardSection">
+          <div class="heartIconContainer">
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 32 32"
+                aria-hidden="true"
+                role="presentation"
+                focusable="false"
+                style="
+                  display: block;
+                  fill: rgba(0, 0, 0, 0.5);
+                  height: 24px;
+                  width: 24px;
+                  stroke: var(--f-mkcy-f);
+                  stroke-width: 2;
+                  overflow: visible;
+                "
+              >
+                <path
+                  d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+          <div class="imgContainer">
+            <img
+              class="imgSize"
+              aria-hidden="true"
+              elementtiming="LCP-target"
+              fetchpriority="auto"
+              loading="eager"
+              src="https://a0.muscache.com/im/pictures/miso/Hosting-34808487/original/f325c6a1-5033-4cd4-ac31-d63c2e713668.jpeg?im_w=720"
+              data-original-uri="https://a0.muscache.com/im/pictures/miso/Hosting-34808487/original/f325c6a1-5033-4cd4-ac31-d63c2e713668.jpeg?im_w=720"
+              style="--dls-liteimage-object-fit: cover"
+            />
+          </div>
+          <div class="descriptionContainer">
+            <div class="propertyInfo">
+              <p>
+                <strong>Mayfield, UK</strong> <br />
+                Individual host <br />
+                24-31 Jan <br />
+                <span class="price">£821 total</span>
+              </p>
+            </div>
+            <div class="starRateContainer">
+              <span class="starIcon"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32"
+                  aria-hidden="true"
+                  role="presentation"
+                  focusable="false"
+                  style="
+                    display: block;
+                    height: 10px;
+                    width: 10px;
+                    fill: currentcolor;
+                  "
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"
+                  ></path>
+                </svg>
+              </span>
+              <span class="ratings">5.0</span>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <section class="showMoreFullContainer">
+        <div class="textContainer">
+          <div class="showMoreTxt">Continue exploring amazing views</div>
+        </div>
+        <div class="showMoreBtnContainer">
+          <div>
+            <button class="showMoreBtn">Show More</button>
           </div>
         </div>
       </section>
-    </footer>
+    </div>
   </body>
+  <footer class="footerContainer">
+    <section class="supportInfo">
+      <div class="footerList">
+        <ul>
+          <span class="footerHeader">Support</span>
+          <li>Help centre</li>
+          <li>Get help with a safety issue</li>
+          <li>AirCover</li>
+          <li>Anti-discrimination</li>
+          <li>Disability support</li>
+          <li>Cancellation options</li>
+          <li>Report neighbourhood concern</li>
+        </ul>
+      </div>
+    </section>
+    <section class="hostingInfo">
+      <div>
+        <ul>
+          <span class="footerHeader">Hosting</span>
+          <li>Airbnb your home</li>
+          <li>AirCover for hosts</li>
+          <li>Hosting resources</li>
+          <li>Community forum</li>
+          <li>Hosting responsibly</li>
+        </ul>
+      </div>
+    </section>
+    <section class="airBnbInfo">
+      <div>
+        <ul>
+          <span class="footerHeader">AirBnb</span>
+          <li>Newsroom</li>
+          <li>New features</li>
+          <li>Careers</li>
+          <li>Investors</li>
+          <li>Gift cards</li>
+          <li>Airbnb org emergency stays</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="siteInfo">
+      <div class="siteInfoContainer">
+        <div class="languageMoney">
+          <div class="globeSvg">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 16 16"
+              style="
+                display: block;
+                height: 16px;
+                width: 16px;
+                fill: currentColor;
+              "
+              aria-hidden="true"
+              role="presentation"
+              focusable="false"
+            >
+              <path
+                d="M8 .25a7.77 7.77 0 0 1 7.75 7.78 7.75 7.75 0 0 1-7.52 7.72h-.25A7.75 7.75 0 0 1 .25 8.24v-.25A7.75 7.75 0 0 1 8 .25zm1.95 8.5h-3.9c.15 2.9 1.17 5.34 1.88 5.5H8c.68 0 1.72-2.37 1.93-5.23zm4.26 0h-2.76c-.09 1.96-.53 3.78-1.18 5.08A6.26 6.26 0 0 0 14.17 9zm-9.67 0H1.8a6.26 6.26 0 0 0 3.94 5.08 12.59 12.59 0 0 1-1.16-4.7l-.03-.38zm1.2-6.58-.12.05a6.26 6.26 0 0 0-3.83 5.03h2.75c.09-1.83.48-3.54 1.06-4.81zm2.25-.42c-.7 0-1.78 2.51-1.94 5.5h3.9c-.15-2.9-1.18-5.34-1.89-5.5h-.07zm2.28.43.03.05a12.95 12.95 0 0 1 1.15 5.02h2.75a6.28 6.28 0 0 0-3.93-5.07z"
+              ></path>
+            </svg>
+          </div>
+          <span class="language">English (GB)</span>
+          <span class="currency">£ GBP</span>
+        </div>
+
+        <div class="copyright">© 2024 Airbnb, Inc.</div>
+
+        <div class="privacyTermsMap">Privacy • Terms • Sitemap •</div>
+
+        <div class="slaveActCompanydeets">
+          UK Modern Slavery Act • Company details
+        </div>
+      </div>
+    </section>
+  </footer>
 </html>
